@@ -19,7 +19,8 @@
  > Your project description should summarize the project you are proposing. Be sure to include:
  > * Why is it important or interesting to you?
 >  * As developers, Scrum and Chill is important to us as we want to eliminate the idea of people being indecisvive of what movie they want to watch. A lot of the times people will be with their significant other or a group of their friends and have no clue on what movie to pick. Our project saves time for user's by picking out a movie to watch based on the user or groups interests.
- > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project) As of right now, we are most likely going to use a C++ backend. We want to implement a userface but are still trying to figure out what is the best technology to use. We most likely will use the std vector library to store a large vector of movies of different genres.
+ > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
+>  * As of right now, we are most likely going to use a C++ backend. We want to implement a userface but are still trying to figure out what is the best technology to use. We most likely will use the std vector library to store a large vector of movies of different genres.
  > * What will be the input/output of your project?
  > * What are the features that the project provides?
  > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
