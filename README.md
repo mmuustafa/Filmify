@@ -22,7 +22,9 @@
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
 >  * As of right now, we are most likely going to use a C++ backend. We want to implement a userface but are still trying to figure out what is the best technology to use. We most likely will use the std vector library to store a large vector of movies of different genres.
  > * What will be the input/output of your project?
+>  * The input will be the user's choice of movie genre, how long of a duration of a movie they are willing to watch, etc. The output will be the reccomended movie.
  > * What are the features that the project provides?
+>  * The project will reccomend movies based on users' preferences. We also want to add a feature that stores movies that users have already watched.
  > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
  > 
  > You also need to set up an empty project board using GitHub projects (board view with default columns). Make sure you add the board under your project repository. You should also have a Product Backlog and In testing columns added. All columns should be in the right order.
