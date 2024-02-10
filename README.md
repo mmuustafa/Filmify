@@ -23,7 +23,7 @@
      
   What languages/tools/technologies do you plan to use? (This list may change over the course of the project)  
   
-  > *As of right now, we are most likely going to use a C++ backend. We want to implement a userface but are still trying to figure out what is the best technology to use. We most likely will use the std vector library to store a large vector of movies of different genres.
+  > * As of right now, we are most likely going to use a C++ backend. We want to implement a userface but are still trying to figure out what is the best technology to use. We most likely will use the std vector library to store a large vector of movies of different genres.
 
  What will be the input/output of your project?
 
