@@ -54,7 +54,8 @@
 
 ### Screen Layouts
 > Include the layout of each of your screens. The layout should describe the screen’s major components such as menus and prompts for user inputs and expected output, or any graphical user interface components if applicable (e.g. buttons, text boxes, etc). Explain what is on the layout, and the purpose of each menu item, button, etc. If many screens share the same layout, start by describing the general layout and then list the screens that will be using that layout and the differences between each of them.
-![layout](https://github.com/cs100/final-project-mhass027-jmann028-ialib001-aprat023/assets/130103019/6c93a895-50f4-4bae-bac8-cbc78549547d)
+> 
+![screen layouts-8](https://github.com/cs100/final-project-mhass027-jmann028-ialib001-aprat023/assets/130103019/b02910ab-0273-4ac6-9558-b141c0c57edf)
 
 ## Class Diagram
  > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
