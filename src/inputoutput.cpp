@@ -15,7 +15,7 @@ int inputOutput::outputWelcomeMessage() {
     int option;
     while (true) {
         cin >> option;
-        if (option > 0 && option < 5) {
+        if (option > 0 && option < 5) { // if option is not between 1 and 4, ask break?
             break;
         }
         cout << "Please enter a valid option." << endl;
