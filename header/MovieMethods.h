@@ -9,7 +9,7 @@ class MovieMethods {
 
     private:
     vector<Movie> reccomendedMovies;
-    vector<Movie> everyMovieEver
+    vector<Movie> everyMovieEver;
 
     public:
     MovieMethods();
