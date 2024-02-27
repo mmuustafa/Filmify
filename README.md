@@ -1,7 +1,7 @@
  > As you complete each section you **must** remove the prompt text. Every *turnin* of this project includes points for formatting of this README so keep it clean and keep it up to date. 
  > Prompt text is any lines beginning with "\>"
  > Replace anything between \<...\> with your project specifics and remove angle brackets. For example, you need to name your project and replace the header right below this line with that title (no angle brackets). 
-# Scrum and Chill
+# Filmify
  > Your author list below should include links to all members GitHub (remove existing author).
  
  > Authors: \<[Jeffrey McDaniel](https://github.com/jmcda001)\>
@@ -59,8 +59,9 @@
 
 ## Class Diagram
  > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
+![UML Diagram CS100 Final Project Phase 3](https://github.com/cs100/final-project-mhass027-jmann028-ialib001-aprat023/assets/143841150/376ff4d7-c701-41ff-b361-d80d9079deeb)
 
-![CS100 UML Project Diagram](https://github.com/cs100/final-project-mhass027-jmann028-ialib001-aprat023/assets/143841150/57f331eb-004c-4be7-8c19-a045fab7fc7e)
+  
 Description:
 Our UML diagram has 4 classes, those being InputOutput, OutputVector, UserData, and Movie. The first InputOutput class gets the user specifications and has accesor functions such userOption(), where the user can input their desired duration, genre, and actor. The userData class communicates with the where we can create a userData object that has all the user's specifications. Our Movie Class consists of private variables such as vectors reccomendedMovies(). We also have the listOfMovies vector which will probably be of type 'long long'. We also have functions where we can generate movies based on actor, and duration
 
