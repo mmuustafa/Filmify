@@ -23,3 +23,30 @@ int inputOutput::outputWelcomeMessage() {
     cout << endl;
     return option;
 }
+
+int inputOutput::outputClosingMessage() {
+    int decision = 0;
+    int runAgain = 0;
+    cout << "Thank you for using Filmify!" << endl;
+    cout << "Are you satisfied with your film suggestion?" << endl;
+    cout << "type 1 for yes and 2 for no" << endl;
+    cin >> decision; 
+    if (decision = 1) {
+        cout << "we are happy to hear that, enjoy your movie!" << endl;
+    }
+    else if(decision = 2) {
+        cout << "we are sorry to hear that, would you like to run the program again?" << endl;
+        cout << "type 1 for yes and 2 for no" << endl;
+        cin >> runAgain; 
+
+        if(runAgain= 1) {
+            outputWelcomeMessage();
+        }
+        else if(runAgain = 2) {
+            "Thank you for using Filmify, hope to see you again soon!";
+        }
+    }
+    else {
+        cout << "not a valid option, please choose a different value";
+    }
+}
