@@ -6,7 +6,7 @@
 
 class MovieDataSet{
 
-    vector <Movie> generateListOfMovies() const
+    vector<Movie> generateListOfMovies() const
 
 };
 
