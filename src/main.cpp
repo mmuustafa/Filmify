@@ -10,15 +10,17 @@ int main() {
     inputOutput io;
     int option;
     string movieName;
-
+    Movie desiredMovie;
     
     option =  io.outputWelcomeMessage();
 
     if (option ==  1) {
         cout << "Please enter the name of the movie you want to search for: " << endl;
         cin >> movieName;
-        cout << endl; 
+        cout << endl;
+        desiredMovie.setMovieName(movieName); 
     }
+    // cout << desiredMovie.getMovieName() << endl; // Debugging purposes
     
 
     return 0;
