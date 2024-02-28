@@ -3,6 +3,7 @@
 #include "../header/inputoutput.h"
 #include "../header/MovieMethods.h"
 #include "../header/Movie.h"
+#include "../header/MovieDataSet.h"
 
 using namespace std;
 
@@ -21,7 +22,6 @@ int main() {
         desiredMovie.setMovieName(movieName); 
     }
     cout << desiredMovie.getMovieName() << endl; // Debugging purposes
-    
 
     return 0;
 }
