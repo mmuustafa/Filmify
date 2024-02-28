@@ -32,8 +32,4 @@ class MovieMethods {
 };
 
 
-
-
-
-
 #endif
