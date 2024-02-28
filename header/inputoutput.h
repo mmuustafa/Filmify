@@ -5,7 +5,7 @@
 #include <string>
 #include <vector>
 #include "Movie.h"
-// #include "MovieMethods.h"
+#include "MovieMethods.h"
 
 using namespace std;
 

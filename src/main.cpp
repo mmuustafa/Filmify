@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
-#include "../header/MovieMethods.h"
 #include "../header/inputoutput.h"
+#include "../header/MovieMethods.h"
 
 using namespace std;
 
