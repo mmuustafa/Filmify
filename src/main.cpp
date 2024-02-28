@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
-#include "final-project-mhass027-jmann028-ialib001-aprat023/header/MovieMethods.h"
-#include "final-project-mhass027-jmann028-ialib001-aprat023/header/inputoutput.h"
+#include "../header/MovieMethods.h"
+#include "../header/inputoutput.h"
 
 using namespace std;
 

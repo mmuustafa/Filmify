@@ -1,9 +1,9 @@
 #include <iostream>
-#include "header/inputoutput.h"
+#include "../header/inputoutput.h"
 
 using namespace std;
 
-int inputOutput::outputWelcomeMessage() {
+void inputOutput::outputWelcomeMessage() {
     cout << "Welcome to Filimify" << endl;
     cout << "We are here to help you find the best movie for you." << endl;
     cout << "Please enter on what attributes you want your recommended movie to be based on:" << endl;
@@ -21,32 +21,32 @@ int inputOutput::outputWelcomeMessage() {
         cout << "Please enter a valid option." << endl;
     }
     cout << endl;
-    return option;
 }
 
-int inputOutput::outputClosingMessage() {
+void inputOutput::outputClosingMessage() {
     int decision = 0;
     int runAgain = 0;
     cout << "Thank you for using Filmify!" << endl;
     cout << "Are you satisfied with your film suggestion?" << endl;
     cout << "type 1 for yes and 2 for no" << endl;
     cin >> decision; 
-    if (decision = 1) {
+    if (decision == 1) {
         cout << "we are happy to hear that, enjoy your movie!" << endl;
     }
-    else if(decision = 2) {
+    else if(decision == 2) {
         cout << "we are sorry to hear that, would you like to run the program again?" << endl;
         cout << "type 1 for yes and 2 for no" << endl;
         cin >> runAgain; 
 
-        if(runAgain= 1) {
+        if(runAgain == 1) {
             outputWelcomeMessage();
         }
-        else if(runAgain = 2) {
-            "Thank you for using Filmify, hope to see you again soon!";
+        else if(runAgain == 2) {
+            cout << "Thank you for using Filmify, hope to see you again soon!" << endl;
         }
     }
     else {
         cout << "not a valid option, please choose a different value";
     }
+
 }

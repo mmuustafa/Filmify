@@ -1,4 +1,4 @@
-#include "Movie.h"
+#include "../header/Movie.h"
 
 Movie:: Movie(string filmName, string actorName, string genreName, string direcName, double rate, int yr)
 {
