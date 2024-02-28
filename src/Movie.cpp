@@ -1,7 +1,16 @@
 #include "../header/Movie.h"
 
-Movie:: Movie(string filmName, string actorName, string genreName, string direcName, double rate, int yr)
-{
+// Existing constructors
+Movie::Movie() {
+    movieName = "";
+    actor = "";
+    genre = "";
+    director = "";
+    rating = 0.0;
+    year = 0;
+}
+
+Movie::Movie(string filmName, string actorName, string genreName, string direcName, double rate, int yr) {
     movieName = filmName;
     actor = actorName;
     genre = genreName;
@@ -9,14 +18,36 @@ Movie:: Movie(string filmName, string actorName, string genreName, string direcN
     rating = rate;
     year = yr;
 }
-string Movie :: getMovieName() { return movieName;}
 
-string Movie ::getActor() { return actor;}
+// Existing getters
+string Movie::getMovieName() { return movieName; }
+string Movie::getActor() { return actor; }
+string Movie::getGenre() { return genre; }
+string Movie::getDirector() { return director; }
+double Movie::getRating() { return rating; }
+int Movie::getYear() { return year; }
 
-string Movie :: getGenre() {return genre;}
+// Setter methods
+void Movie::setMovieName(string name) {
+    movieName = name;
+}
 
-string Movie :: getDirector() {return director;}
+void Movie::setActor(string name) {
+    actor = name;
+}
 
-double Movie :: getRating() {return rating;}
+void Movie::setGenre(string name) {
+    genre = name;
+}
 
-int Movie :: getYear() { return year;}
+void Movie::setDirector(string name) {
+    director = name;
+}
+
+void Movie::setRating(double rate) {
+    rating = rate;
+}
+
+void Movie::setYear(int yr) {
+    year = yr;
+}

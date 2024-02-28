@@ -2,15 +2,26 @@
 #include <string>
 #include "../header/inputoutput.h"
 #include "../header/MovieMethods.h"
+#include "../header/Movie.h"
 
 using namespace std;
 
 int main() {
-    inputOutput io; // Create an instance of inputOutput class
-    int option = io.outputWelcomeMessage(); // Call the function on the instance
+    inputOutput io;
+    int option;
+    string movieName;
+    Movie desiredMovie;
+    
+    option =  io.outputWelcomeMessage();
 
-    // Now you can use the 'option' variable in your code
-    // ...
+    if (option ==  1) {
+        cout << "Please enter the name of the movie you want to search for: " << endl;
+        cin >> movieName;
+        cout << endl;
+        desiredMovie.setMovieName(movieName); 
+    }
+    // cout << desiredMovie.getMovieName() << endl; // Debugging purposes
+    
 
     return 0;
 }
