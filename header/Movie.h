@@ -18,6 +18,7 @@ class Movie {
 
 
     public:
+    Movie();
     Movie(string, string, string, string, double, int);
     string getMovieName();
     string getActor();
@@ -25,6 +26,15 @@ class Movie {
     string getDirector();
     double getRating();
     int getYear(); 
+
+
+
+    void setMovieName(string name);
+    void setActor(string name);
+    void setGenre(string name);
+    void setDirector(string name);
+    void setRating(double rate);
+    void setYear(int yr);
 
 
 };
