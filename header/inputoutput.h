@@ -11,8 +11,8 @@ using namespace std;
 
 class inputOutput {
 public:
-    void outputWelcomeMessage();
-    void outputClosingMessage();
+    int outputWelcomeMessage();
+    int outputClosingMessage();
     std::vector<std::string> outputListOfActors();
     std::vector<std::string> outputListOfDirectors();
     std::vector<std::string> outputListOfGenre();

@@ -6,7 +6,7 @@
 
 class MovieDataSet{
 
-    vector <Movie> generateListOfMovies();
+    vector<Movie> generateListOfMovies();
 
 };
 
