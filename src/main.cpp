@@ -20,7 +20,7 @@ int main() {
         cout << endl;
         desiredMovie.setMovieName(movieName); 
     }
-    // cout << desiredMovie.getMovieName() << endl; // Debugging purposes
+    cout << desiredMovie.getMovieName() << endl; // Debugging purposes
     
 
     return 0;
