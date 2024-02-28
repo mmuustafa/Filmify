@@ -1,6 +1,14 @@
 #include "../header/Movie.h"
 
-Movie:: Movie(string filmName, string actorName, string genreName, string direcName, double rate, int yr)
+Movie::Movie() {
+    movieName = "";
+    actor = "";
+    genre = "";
+    director = "";
+    rating = 0.0;
+    year = 0;
+}
+Movie::Movie(string filmName, string actorName, string genreName, string direcName, double rate, int yr)
 {
     movieName = filmName;
     actor = actorName;
