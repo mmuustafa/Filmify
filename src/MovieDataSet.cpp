@@ -13,6 +13,12 @@ vector<Movie> MovieDataSet:: generateListOfMovies()
     vector<Movie> fillMovies;
     ifstream infs("../lib/movies.csv");
 
+    assert(infs);
+    string line = "";
+    getline(infs, line); // empty header line
+    
+    line = "";
+
     if (!infs.is_open())
     {
         cout << "Could not open file!" << endl;
@@ -22,19 +28,50 @@ vector<Movie> MovieDataSet:: generateListOfMovies()
     string spaceLine;
     while (getline(infs,spaceLine))
     {
+        string movName;
+        string actor1;
+        string genre1;
+        string director1;
+        double rating1;
+        int year1;
+        string tempString;
+
         stringstream iss(spaceLine);
         Movie movieObj;
 
-        getline(iss, movieObj.movieName, ',');
-        getline(iss, movieObj.actor, ',');
-        getline(iss, movieObj.genre, ',');
-        getline(iss, movieObj.director, ',');
-        getline(iss, movieObj.rating, ',');
-        iss >> movieObj.year;
+         if (movName.at(0) == '\"') 
+        {   
+              movName += ",";
+              getline(iss, tempString, '\"');
+              movName += tempString;
+              // remove the quote at the beginning from the name
+              movName = movName.substr(1, movName.size() - 1);
+              // clear stream to allow for genre to be read
+              getline(iss, tempString, ',');
+        }
+        getline(iss, genre1, ',');
 
-        iss.ignore();
+        getline(iss, tempString, ',');
 
-        fillMovies.push_back(movieObj);
+        // convert string to int when needed
+        year1 = atoi(tempString.c_str());
+        getline(iss, tempString, ',');
+
+        // convert string to double
+        rating1 = atof(tempString.c_str());
+        getline(iss, tempString, ',');
+
+       // votes = atoi(tempString.c_str());
+
+        getline(iss, director1, ',');
+
+        getline(iss, actor1, ',');
+
+
+        Movie movieFill(movName, actor1, genre1, director1, rating1, year1);
+        //iss.ignore();
+
+        fillMovies.push_back(movieFill);
 
     }
 
