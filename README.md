@@ -35,7 +35,6 @@
 
 
 ## Class Diagram
- > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
 
 ![UML Diagram CS100 Final Project Phase 3-2](https://github.com/cs100/final-project-mhass027-jmann028-ialib001-aprat023/assets/143841150/215583d7-40d3-4264-bfb8-9cfcbf86d339)
 
