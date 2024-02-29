@@ -1,7 +1,12 @@
-#include "MovieDataSet.h"
-#include <fstream>
-#include <sstream>
-#include <iostream> 
+#include "../header/MovieDataSet.h"
+#include<iostream>
+#include<string>
+#include<fstream>
+#include<sstream>
+#include<cassert>
+#include<vector>
+
+
 using namespace std;
 
 vector<Movie> MovieDataSet:: generateListOfMovies()
