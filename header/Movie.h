@@ -28,7 +28,7 @@ class Movie {
     int getYear(); 
 
 
-
+    // Setter methods
     void setMovieName(string name);
     void setActor(string name);
     void setGenre(string name);
