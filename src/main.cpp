@@ -9,19 +9,34 @@ using namespace std;
 
 int main() {
     inputOutput io;
+    MovieMethods movieMethods;
     int option;
-    string movieName;
-    Movie desiredMovie;
     
-    option =  io.outputWelcomeMessage();
+    // Display welcome message and get user option
+    option = io.outputWelcomeMessage();
 
-    if (option ==  1) {
+    // Assuming MovieMethods is already set up to have a list of movies
+    if (option == 1) {
+        string movieName;
         cout << "Please enter the name of the movie you want to search for: " << endl;
-        cin >> movieName;
-        cout << endl;
-        desiredMovie.setMovieName(movieName); 
+        cin >> movieName; // Consider using getline(cin, movieName) if movie names can have spaces
+        cout << "Searching for: " << movieName << endl;
+        // implement functionality to search for and display the movie by name
+    } else if (option == 2) {
+        // Print all genres
+        movieMethods.PrintAllGenres();
+    } else if (option == 3) {
+        string actorName;
+        cout << "Please enter the name of the actor you're interested in: " << endl;
+        cin >> actorName;
+        // implement functionality to search for and display movies by actor
+    } else if (option == 4) {
+        string directorName;
+        cout << "Please enter the name of the director you're interested in: " << endl;
+        cin >> directorName;
+        // implement functionality to search for and display movies by director
     }
-    cout << desiredMovie.getMovieName() << endl; // Debugging purposes
-
+    
+    
     return 0;
 }
