@@ -6,13 +6,12 @@
 #include<cassert>
 #include<vector>
 
-
 using namespace std;
 
 vector<Movie> MovieDataSet:: generateListOfMovies()
 {
     vector<Movie> fillMovies;
-    string fileName = "movies.csv";
+    string fileName = "../movieCSV/movies.csv";
 
     ifstream infs(fileName);
     assert(infs);
