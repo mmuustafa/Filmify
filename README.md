@@ -60,11 +60,15 @@
 
 ## Class Diagram
  > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
-![UML Diagram CS100 Final Project Phase 3](https://github.com/cs100/final-project-mhass027-jmann028-ialib001-aprat023/assets/143841150/376ff4d7-c701-41ff-b361-d80d9079deeb)
+
+![UML Diagram CS100 Final Project Phase 3-2](https://github.com/cs100/final-project-mhass027-jmann028-ialib001-aprat023/assets/143841150/215583d7-40d3-4264-bfb8-9cfcbf86d339)
 
   
 Description:
-Our UML diagram has 4 classes, those being InputOutput, OutputVector, UserData, and Movie. The first InputOutput class gets the user specifications and has accesor functions such userOption(), where the user can input their desired duration, genre, and actor. The userData class communicates with the where we can create a userData object that has all the user's specifications. Our Movie Class consists of private variables such as vectors reccomendedMovies(). We also have the listOfMovies vector which will probably be of type 'long long'. We also have functions where we can generate movies based on actor, and duration
+Movie Class: This class serves as a blueprint for movie objects within the system. Each Movie object has attributes such as name, genre, director, and rating. These attributes are used to store information about a movie. The class provides accessor (get) and mutator (set) methods for each attribute, enabling other parts of the system to retrieve or modify movie details.
+InputOutput Class: The InputOutput class is the user interface component of the system. It is responsible for all interactions with the user. This includes displaying lists of movies and various messages, as well as collecting user input for recommendations based on different criteria such as actor, genre, or director. It likely communicates with the backend to fetch and display the relevant data.
+MovieDataSet Class: This class is tasked with creating and managing a collection of movies, which is the dataset that the system operates on. The generateListOfMovies() method suggests that it populates the dataset, potentially by loading data from an external source, in our case a csv file.
+MovieMethods Class: This class contains a suite of operations that can be performed on the movie dataset, such as sorting the movies by different attributes (name, rating, director, etc.) and appending movies to a user's personalized list. It operates on collections of Movie objects, as indicated by methods returning or dealing with vector<Movie> (a C++ Standard Library container used to store sequences of elements).
 
 
  
