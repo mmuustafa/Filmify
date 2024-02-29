@@ -11,8 +11,9 @@ using namespace std;
 vector<Movie> MovieDataSet:: generateListOfMovies()
 {
     vector<Movie> fillMovies;
-    ifstream infs("../lib/movies.csv");
+    string fileName = "movies.csv";
 
+    ifstream infs(fileName);
     assert(infs);
     string line = "";
     getline(infs, line); // empty header line
@@ -25,8 +26,7 @@ vector<Movie> MovieDataSet:: generateListOfMovies()
         return fillMovies; //return empty vector
     }
 
-    string spaceLine;
-    while (getline(infs,spaceLine))
+    while (getline(infs,line))
     {
         string movName;
         string actor1;
@@ -36,10 +36,11 @@ vector<Movie> MovieDataSet:: generateListOfMovies()
         int year1;
         string tempString;
 
-        stringstream iss(spaceLine);
-        Movie movieObj;
+        stringstream iss(line);
+        
+        getline(iss, movName , ',' );
 
-         if (movName.at(0) == '\"') 
+        if (movName.at(0) == '\"') 
         {   
               movName += ",";
               getline(iss, tempString, '\"');
@@ -49,6 +50,7 @@ vector<Movie> MovieDataSet:: generateListOfMovies()
               // clear stream to allow for genre to be read
               getline(iss, tempString, ',');
         }
+
         getline(iss, genre1, ',');
 
         getline(iss, tempString, ',');
@@ -73,8 +75,8 @@ vector<Movie> MovieDataSet:: generateListOfMovies()
 
         fillMovies.push_back(movieFill);
 
-    }
+        line = "";
 
-    infs.close();
+    }
     return fillMovies;
 }
