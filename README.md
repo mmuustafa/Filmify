@@ -26,8 +26,7 @@
 ## User Interface Specification
 
 ### Navigation Diagram
-> Draw a diagram illustrating how the user can navigate from one screen to another. Here is an [example](https://creately.com/diagram/example/ikfqudv82/user-navigation-diagram-classic?r=v). It can be useful to label each symbol that represents a screen so that you can reference the screens in the next section or the rest of the document if necessary. Give a brief description of what the diagram represents.
-> 
+
 ![IMG_0441](https://github.com/cs100/final-project-mhass027-jmann028-ialib001-aprat023/assets/147021240/94c34b97-e647-4cba-bf79-c2827c0783a5)
 
 ### Screen Layouts
