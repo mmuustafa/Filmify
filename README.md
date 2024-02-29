@@ -54,8 +54,9 @@
 
 ### Screen Layouts
 > Include the layout of each of your screens. The layout should describe the screen’s major components such as menus and prompts for user inputs and expected output, or any graphical user interface components if applicable (e.g. buttons, text boxes, etc). Explain what is on the layout, and the purpose of each menu item, button, etc. If many screens share the same layout, start by describing the general layout and then list the screens that will be using that layout and the differences between each of them.
-> 
-[updated screen layout CS100.pdf](https://github.com/cs100/final-project-mhass027-jmann028-ialib001-aprat023/files/14443510/updated.screen.layout.CS100.pdf)
+>
+>
+> ![CS111 Notebook-152](https://github.com/cs100/final-project-mhass027-jmann028-ialib001-aprat023/assets/147021240/f6ea6d0e-4f50-4d7e-bab6-1ef86726737f)
 
 
 ## Class Diagram
