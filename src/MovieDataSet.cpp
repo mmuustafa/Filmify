@@ -4,37 +4,76 @@
 #include <iostream> 
 using namespace std;
 
-vector<Movie> MovieDataSet::generateListOfMovies() {
-    vector<Movie> movies;
-    ifstream file("Movies.csv");
+vector<Movie> MovieDataSet:: generateListOfMovies()
+{
+    vector<Movie> fillMovies;
+    string fileName = "movies.csv";
 
-    string line;
-    // Skip the header line
-    getline(file, line);
+    ifstream infs(fileName);
+    assert(infs);
+    string line = "";
+    getline(infs, line); // empty header line
+    
+    line = "";
 
-    while (getline(file, line)) {
-        stringstream ss(line);
-        string name, genre, director, star, temp;
-        int year;
-        double score;
-        float votes;
-
-        // Extract each piece of data by splitting the line
-        getline(ss, name, ',');
-        getline(ss, genre, ',');
-        getline(ss, temp, ',');
-        year = stoi(temp);
-        getline(ss, temp, ',');
-        score = stod(temp);
-        getline(ss, temp, ',');
-        votes = stof(temp); // Adjust based on your class definition
-        getline(ss, director, ',');
-        getline(ss, star);
-
-        // Create a Movie object and add it to the vector
-        Movie movie(name, star, genre, director, score, year);
-        movies.push_back(movie);
+    if (!infs.is_open())
+    {
+        cout << "Could not open file!" << endl;
+        return fillMovies; //return empty vector
     }
 
-    return movies;
+    while (getline(infs,line))
+    {
+        string movName;
+        string actor1;
+        string genre1;
+        string director1;
+        double rating1;
+        int year1;
+        string tempString;
+
+        stringstream iss(line);
+        
+        getline(iss, movName , ',' );
+
+        if (movName.at(0) == '\"') 
+        {   
+              movName += ",";
+              getline(iss, tempString, '\"');
+              movName += tempString;
+              // remove the quote at the beginning from the name
+              movName = movName.substr(1, movName.size() - 1);
+              // clear stream to allow for genre to be read
+              getline(iss, tempString, ',');
+        }
+
+        getline(iss, genre1, ',');
+
+        getline(iss, tempString, ',');
+
+        // convert string to int when needed
+        year1 = atoi(tempString.c_str());
+        getline(iss, tempString, ',');
+
+        // convert string to double
+        rating1 = atof(tempString.c_str());
+        getline(iss, tempString, ',');
+
+       // votes = atoi(tempString.c_str());
+
+        getline(iss, director1, ',');
+
+        getline(iss, actor1, ',');
+
+
+        Movie movieFill(movName, actor1, genre1, director1, rating1, year1);
+        //iss.ignore();
+
+        fillMovies.push_back(movieFill);
+
+        line = "";
+
+    }
+    return fillMovies;
+
 }
