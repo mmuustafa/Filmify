@@ -5,8 +5,8 @@
 #include <vector>
 
 class MovieDataSet{
-
-    vector<Movie> generateListOfMovies();
+    public:
+        vector<Movie> generateListOfMovies();
 
 };
 
