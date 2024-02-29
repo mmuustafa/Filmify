@@ -5,7 +5,6 @@
 \<[Jahanbir Mann](https://github.com/jmann028)\
 \<[Iliyan Alibhai](https://github.com/ialib001)\>
 >
- > ## Expectations
 
 ## Project Description
  > Your project description should summarize the project you are proposing. Be sure to include:
