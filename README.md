@@ -27,7 +27,8 @@
 
 ### Navigation Diagram
 
-![IMG_0441](https://github.com/cs100/final-project-mhass027-jmann028-ialib001-aprat023/assets/147021240/94c34b97-e647-4cba-bf79-c2827c0783a5)
+![IMG_C2BDD3484027-1](https://github.com/cs100/final-project-mhass027-jmann028-ialib001-aprat023/assets/147021240/4ca6db23-f167-4058-92f1-20832ed7269c)
+
 
 ### Screen Layouts
 
