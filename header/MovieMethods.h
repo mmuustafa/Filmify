@@ -2,6 +2,8 @@
 #define MOVIESMETHODS_H
 
 #include "Movie.h"
+#include <algorithm> // For transform function
+#include <cctype> // For tolower function
 
 using namespace std;
 
@@ -27,13 +29,7 @@ class MovieMethods {
     void CreateReccsBasedOnActor(string );
     void CreateReccsBasedOnGenre(string );
     void CreateReccsBasedOnDirector(string );
-
-
 };
-
-
-
-
 
 
 #endif
