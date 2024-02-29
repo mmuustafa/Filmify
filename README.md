@@ -51,31 +51,7 @@ MovieMethods Class: This class contains a suite of operations that can be perfor
 
  
  > ## Phase III
- > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on week 8 during lab time.
- 
- > BEFORE the meeting you should do the following:
- > * Update your class diagram from Phase II to include any feedback you received from your TA/grader.
- > * Considering the SOLID design principles, reflect back on your class diagram and think about how you can use the SOLID principles to improve your design. You should then update the README.md file by adding the following:
- >   * A new class diagram incorporating your changes after considering the SOLID principles.
- >   * For each update in your class diagram, you must explain in 3-4 sentences:
- >     * What SOLID principle(s) did you apply?
- >     * How did you apply it? i.e. describe the change.
- >     * How did this change help you write better code?
 ------------------------------------------------------------------------------------
-> SOLID Principles Explanation: 
-Our UML Diagram follows SOLID principles but does not use all of the principles, as our program does not require certain implementations that require specific principles. The principles that our program follows and requires include: Single responsibility principle, Interface segregation principle, and the open closed principle. Firstly, our UML Diagram strictly follows the SRP because for each functionality of our program, we have a specific class; for example:Each class in the diagram seems to have a specific responsibility. For example, the Movie class is responsible for movie-related data, the InputOutput class handles user input and output operations, and the MovieDataSet class is responsible for generating a list of movies and our MovieMethods class focuses on sorting each film by its attributes such as rating and duration, This suggests the SRP is being followed.
-Open-closed principle: An example of us adopting the Open-Closed-Principle would be our MovieMethods class, specifically, our SortByName() and SortByRating(). We can extend the logic for these methods without having to modify the existing code.
-Using both these principles positively impacts our program by keeping it cleaner and less prone to bugs and errors. When following the SRP, our code is neater as we as the developers know exactly which class is created to perform which function, rather than all functionalities being compressed into one large class. When following the OCP it prevents the likelihood of bugs in our code when developing sort methods because we don’t have to change the code for any of methods, since they are open for any object to us
----------------------------------------------------------------------------------------
- > * Perform a new sprint plan like you did in Phase II.
- > * You should also make sure that your README file (and Project board) are up-to-date reflecting the current status of your project and the most recent class diagram. Previous versions of the README file should still be visible through your commit history.
- 
-> During the meeting with your reader you will discuss: 
- > * How effective your last sprint was (each member should talk about what they did)
- > * Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint
- > * Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority?
- > * What tasks you are planning for this next sprint.
-
  
  > ## Final deliverable
  > All group members will give a demo to the reader during lab time. ou should schedule your demo on Calendly with the same reader who took your second scrum meeting. The reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
