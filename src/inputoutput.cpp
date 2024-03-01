@@ -106,3 +106,39 @@ string inputOutput:: manageGenreReccs(MovieMethods& genreMethod)
      // returns the genre the user chose for recommendation
      return userGenre;
 }
+
+ string inputOutput:: manageMovieNameReccs(MovieMethods& MovieNameMethod)
+ {
+    string nameOfMovie;
+    cin.ignore(numeric_limits<streamsize>::max(),'\n');
+    getline(cin, nameOfMovie);
+    cout << endl;
+    while(1)
+    {
+        if(cin.fail())
+        {
+            cin.ignore(numeric_limits<streamsize>::max(),'\n');
+            cin.clear();
+            cout << "Movie not found!" << endl;
+            cout << "Enter a movie name for a similar movie recommendation" << endl;
+            getline(cin, nameOfMovie);
+            cout << endl;
+        }
+        if(!cin.fail())
+        {
+            Movie currMovie = MovieNameMethod.GetMovieName(nameOfMovie);
+            if (currMovie.getMovieName() != "Not found!")
+            {
+                break;
+            }
+            cout << "Movie not found!" << endl;
+            cout << "Enter a movie name for a similar movie recommendation" << endl;
+            getline(cin, nameOfMovie);
+            cout << endl;
+        }
+    }
+    return nameOfMovie;
+
+ }
+string manageDirectorReccs(MovieMethods& );
+string manageActorReccs(MovieMethods& );

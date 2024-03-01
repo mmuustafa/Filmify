@@ -18,9 +18,10 @@ int main() {
     // Assuming MovieMethods is already set up to have a list of movies
     if (option == 1) {
         string movieName;
-        cout << "Please enter the name of the movie you want to search for: " << endl;
-        cin >> movieName; // Consider using getline(cin, movieName) if movie names can have spaces
-        cout << "Searching for: " << movieName << endl;
+        cout << "Awesome, Please enter the name of the movie you're interested in: " << endl;
+        movieName = io.manageMovieNameReccs(movieMethods);
+        movieMethods.CreateReccsBasedOnMovieName(movieName);
+        cout << "Great!, here is your list of reccomendations based on the movie you entered!" << endl;
         //movieMethods.PrintAllMovies();
         // implement functionality to search for and display the movie by name
     } 
@@ -46,17 +47,19 @@ int main() {
             cout << endl;
             cout << "Here is your list of genres!" << endl;
             cout << "Choose a genre and we'll develop a list of movies for your choosing based on your desired genre." << endl;
-            cin >>userGenre;
+            userGenre = io.manageGenreReccs(movieMethods);
+            movieMethods.CreateReccsBasedOnGenre(userGenre);
             //INSERT FUNCTION TO OUTPUT THE MOVIES HERE
-            cout << endl;
+            //cout << endl;
             cout << "Great!, here is your list of reccomendations based on your desired genre." << endl;
             }
     } 
     
     else if (option == 3) {
         string actorName;
-        cout << "Please enter the name of the actor you're interested in: " << endl;
-        cin >> actorName;
+        cout << "Awesome, Please enter the name of the actor you're interested in: " << endl;
+        // actorName = io.manageMovieNameReccs(movieMethods);
+        // movieMethods.CreateReccsBasedOnMovieName(actor)
         // implement functionality to search for and display movies by actor
     } 
     

@@ -40,8 +40,47 @@ void MovieMethods:: CreateReccsBasedOnMovieName(string specMovieName)
         }
     }
 }
-//void CreateReccsBasedOnActor(string );
-//void CreateReccsBasedOnDirector(string );
+void MovieMethods:: CreateReccsBasedOnActor(string specActor)
+{
+    for (int i = 0; i < everyMovieEver.size(); ++i) {
+        if (everyMovieEver.at(i).getActor() == specActor) {
+            reccomendedMovies.push_back(everyMovieEver.at(i));
+        }
+    }
+}
+void MovieMethods:: CreateReccsBasedOnDirector(string specDirector)
+{
+    for (int i = 0; i < everyMovieEver.size(); ++i) {
+        if (everyMovieEver.at(i).getDirector() == specDirector) {
+            reccomendedMovies.push_back(everyMovieEver.at(i));
+        }
+    }
+}
+
+Movie MovieMethods:: GetMovieName(string movie1)
+{
+    for (int i = 0; i < everyMovieEver.size(); ++i) {
+        if (everyMovieEver.at(i).getMovieName() == movie1) {
+            return everyMovieEver.at(i);
+        }
+    }
+
+    // if it's not found maybe you could create and return a Movie object with all
+    // string data members as "N/A" and int and double data members as 0 so we can validate it
+    // in main
+
+    string name = "N/A";
+    string genre = "N/A";
+    string director = "N/A";
+    string star = "N/A";
+    double rating = 0.0;
+    int votes = 0;
+    int year = 0;
+
+    Movie nullMovie(name, genre, director, star, rating, year);
+
+    return nullMovie;
+}
 
 int MovieMethods:: PrintFinalListOfReccs(int num)
 {
