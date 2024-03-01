@@ -15,7 +15,7 @@ class MovieMethods {
 
     public:
     MovieMethods();
-    Movie GetMovie(string );
+    Movie GetMovieName(string );
     void SortByAlphabetical();
     void SortByRating();
     void SortByYear();
