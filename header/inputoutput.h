@@ -28,6 +28,15 @@ public:
     int InputUserSortingDecision();
     void PrintSortedOptions(int option);
     void printMenu();
+
+    string manageGenreReccs(MovieMethods& );
+    string manageMovieNameReccs(MovieMethods& );
+    string manageDirectorReccs(MovieMethods& );
+    string manageActorReccs(MovieMethods& );
+    
+    
+    
+    
 };
 
 
