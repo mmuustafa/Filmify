@@ -64,11 +64,6 @@ Movie MovieMethods:: GetMovieName(string movie1)
             return everyMovieEver.at(i);
         }
     }
-
-    // if it's not found maybe you could create and return a Movie object with all
-    // string data members as "N/A" and int and double data members as 0 so we can validate it
-    // in main
-
     string name = "N/A";
     string genre = "N/A";
     string director = "N/A";
@@ -101,7 +96,3 @@ int MovieMethods:: PrintFinalListOfReccs(int num)
     cout << endl;
     return movieCounter;
 }
-
-
-
-
