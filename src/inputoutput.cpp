@@ -55,3 +55,54 @@ int inputOutput::outputClosingMessage() {
 
 void inputOutput::printMenu() {
 }
+
+string inputOutput:: manageGenreReccs(MovieMethods& genreMethod)
+{
+    vector<string> genres;
+    genres.push_back("Drama"); 
+    genres.push_back("Adventure");
+    genres.push_back("Action");
+    genres.push_back("Comedy");
+    genres.push_back("Horror");
+    genres.push_back("Biography");
+    genres.push_back("Crime");
+    genres.push_back("Western");
+    genres.push_back("Fantasy");
+    genres.push_back("Animation"); 
+    genres.push_back("Thriller");
+    genres.push_back("Romance");
+    genres.push_back("Mystery");
+    genres.push_back("Sci-Fi");
+    genres.push_back("Sport");
+    genres.push_back("Musical");
+
+    string userGenre = "";
+    cin >> userGenre;
+
+    while(1)
+    {
+        if(cin.fail())
+        {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(),'\n');
+            cout << "Please enter a valid option" << endl;
+            cin >> userGenre;
+        }
+        if(!cin.fail())
+        {
+            // iterate through genre list and check if userGenre is in list
+            for (unsigned int i = 0; i < genres.size(); ++i)
+            {
+                if (userGenre == genres.at(i))
+                {
+                    cout << endl << endl;
+                    return userGenre;
+                }
+            }
+            cout << "Please enter a valid option" << endl;
+            cin >> userGenre;
+        }
+    }
+     // returns the genre the user chose for recommendation
+     return userGenre;
+}
