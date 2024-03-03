@@ -140,5 +140,38 @@ string inputOutput:: manageGenreReccs(MovieMethods& genreMethod)
     return nameOfMovie;
 
  }
-string manageDirectorReccs(MovieMethods& );
-string manageActorReccs(MovieMethods& );
+//tring inputOutput:: manageDirectorReccs(MovieMethods& directoMethod);
+
+string inputOutput:: manageActorReccs(MovieMethods& actorMethod)
+{
+    string actor = "";
+    cin.ignore(numeric_limits<streamsize>::max(),'\n');
+    getline(cin, actor);
+    cout << endl;
+    while(true)
+    {
+        if(cin.fail())
+        {
+            cin.ignore(numeric_limits<streamsize>::max(),'\n');
+            cin.clear();
+            cout << "Actor not found!" << endl;
+            cout << "Enter an actor (full name) to get a recommendation on movies they starred in" << endl;
+            getline(cin, actor);
+            cout << endl;
+            
+        }
+        if(!cin.fail())
+        {
+            if (actorMethod.isActorReal(actor))
+            {
+                break;
+            }
+            cout << "Actor not found!" << endl;
+            cout << "Enter an actor (full name) to get a recommendation on movies they starred in" << endl;
+            getline(cin, actor);
+            cout << endl;
+            
+        }
+    }
+    return actor;
+}

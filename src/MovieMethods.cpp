@@ -96,3 +96,15 @@ int MovieMethods:: PrintFinalListOfReccs(int num)
     cout << endl;
     return movieCounter;
 }
+
+bool MovieMethods:: isActorReal(string actorName)
+{
+    for (unsigned i = 0; i < everyMovieEver.size(); i++)
+    {
+        if(everyMovieEver.at(i).getActor() ==actorName)
+        {
+            return true;
+        }
+    }
+    return false;
+}

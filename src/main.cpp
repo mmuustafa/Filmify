@@ -23,7 +23,9 @@ int main() {
 
         movieName = io.manageMovieNameReccs(movieMethods);
 
-        cout << "Great, now that we have the name of your movie, on what attributes would you like your reccomendation based on?" << endl;
+        cout << "Awesome, " << movieName << " is a great movie!" << endl;
+        cout << endl;
+        cout << "Now that we have the name of your movie, on what attributes would you like your reccomendation based on?" << endl;
         cout << "1. Genre of that movie" << endl;
         cout << "2. Starring actor in that movie" << endl;
         cout << "3. Director of that movie" << endl;
@@ -58,7 +60,7 @@ int main() {
         //movieMethods.CreateReccsBasedOnMovieName(movieName);
         cout << "Great!, here is your list of reccomendations based on the movie you entered!" << endl;
         // implement functionality to search for and display the movie by name
-}
+    }
     
     
     else if (option == 2) {
@@ -74,7 +76,8 @@ int main() {
                 userGenre = io.manageGenreReccs(movieMethods);
                 movieMethods.CreateReccsBasedOnGenre(userGenre);
                 //INSERT FUNCTION TO OUTPUT THE MOVIES HERE
-                cout << "Great!, here is your list of reccomendations based on your desired genre." << endl;
+                cout << "Good choice! you can never go wrong with a " << userGenre << " movie." << endl;
+                cout << "Great!, here is your list of reccomendations based on your choice of " << userGenre << endl;
             }
             else if ( option1 == 2)
             {
@@ -84,18 +87,18 @@ int main() {
             cout << "Choose a genre and we'll develop a list of movies for your choosing based on your desired genre." << endl;
             userGenre = io.manageGenreReccs(movieMethods);
             movieMethods.CreateReccsBasedOnGenre(userGenre);
-            //INSERT FUNCTION TO OUTPUT THE MOVIES HERE
-            //cout << endl;
-            cout << "Great!, here is your list of reccomendations based on your desired genre." << endl;
+            cout << "Good choice! glad we can help you in your process of choosing " << userGenre << " as your genre." << endl;
+            cout << "Great!, here is your list of reccomendations based on your choice of " << userGenre << endl;
             }
     } 
     
     else if (option == 3) {
         string actorName;
         cout << "Awesome, Please enter the name of the actor you're interested in: " << endl;
-        // actorName = io.manageMovieNameReccs(movieMethods);
-        // movieMethods.CreateReccsBasedOnMovieName(actor)
+        actorName = io.manageActorReccs(movieMethods);
+        movieMethods.CreateReccsBasedOnActor(actorName);
         // implement functionality to search for and display movies by actor
+        cout <<"Great choice, " << actorName << " is a great actor, here are their movies!" << endl;
     } 
     
     else if (option == 4) {
@@ -106,8 +109,6 @@ int main() {
     }
 
     movieMethods.PrintFinalListOfReccs(0);
-    
-    
     
     return 0;
 }
