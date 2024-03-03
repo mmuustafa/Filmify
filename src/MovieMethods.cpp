@@ -108,3 +108,15 @@ bool MovieMethods:: isActorReal(string actorName)
     }
     return false;
 }
+
+bool MovieMethods:: isDirectorReal(string directorName)
+{
+    for (unsigned i = 0; i < everyMovieEver.size(); i++)
+    {
+        if(everyMovieEver.at(i).getDirector() == directorName)
+        {
+            return true;
+        }
+    }
+    return false;
+}
