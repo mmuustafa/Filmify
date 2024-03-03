@@ -1,4 +1,4 @@
-g++ inputoutput.cpp main.cpp Movie.cpp MovieDataSet.cpp MovieMethods.cpp
 
+g++ inputoutput.cpp main.cpp Movie.cpp MovieDataSet.cpp MovieMethods.cpp
 NOTE: IN VS CODE, GENRE IMPLEMENTATION IS print_director_function, BUT IN GITHUB IT IS genre_implementation.
 
