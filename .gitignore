@@ -4,3 +4,6 @@ cmake_install.cmake
 CMakeFiles
 a.out
 compiler file
+CMakeLists.txt
+run
+
