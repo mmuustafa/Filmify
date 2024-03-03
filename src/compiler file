@@ -1,4 +1,52 @@
-g++ inputoutput.cpp main.cpp Movie.cpp MovieDataSet.cpp MovieMethods.cpp
 
+g++ inputoutput.cpp main.cpp Movie.cpp MovieDataSet.cpp MovieMethods.cpp
 NOTE: IN VS CODE, GENRE IMPLEMENTATION IS print_director_function, BUT IN GITHUB IT IS genre_implementation.
 
+
+
+if (option == 1) {
+        string movieName;
+        int userOption;
+        cout << "Awesome, Please enter the name of the movie you're interested in: " << endl;
+
+        movieName = io.manageMovieNameReccs(movieMethods);
+
+        cout << "Great, now that we have the name of your movie, on what attributes would you like your reccomendation based on?" << endl;
+        cout << "1. Genre of that movie" << endl;
+        cout << "2. Starring actor in that movie" << endl;
+        cout << "3. Director of that movie" << endl;
+        
+        Movie userMovie = movieMethods.GetMovieName(movieName);
+
+        cin >> userOption;
+
+        if(userOption == 1)
+        {
+            cout << "searching for movies!" << endl;
+            movieMethods.CreateReccsBasedOnGenre(userMovie.getGenre());
+            //WANT TO OUTPUT THE LIST OF MOVIES THAT ARE BASED ON SAME GENRE AS THAT MOVIE
+            cout << endl;
+        }
+        
+        else if (userOption == 2)
+        {
+            cout << "searching for movies!" << endl;
+            movieMethods.CreateReccsBasedOnActor(userMovie.getActor());
+            //WANT TO OUTPUT THE LIST OF MOVIES THAT ARE BASED ON SAME ACTOR
+            cout << endl;
+        }
+
+        else if (userOption == 3)
+        {
+            cout << "searching for movies!" << endl;
+            movieMethods.CreateReccsBasedOnDirector(userMovie.getDirector());
+            //WANT TO OUTPUT THE LIST OF MOVIES THAT ARE BASED ON SAME DIRECTOR
+            cout << endl;
+        }
+
+
+
+        //movieMethods.CreateReccsBasedOnMovieName(movieName);
+        cout << "Great!, here is your list of reccomendations based on the movie you entered!" << endl;
+        // implement functionality to search for and display the movie by name
+}
