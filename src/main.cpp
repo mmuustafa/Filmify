@@ -55,13 +55,11 @@ int main() {
             //WANT TO OUTPUT THE LIST OF MOVIES THAT ARE BASED ON SAME DIRECTOR
             cout << endl;
         }
-
-
-
         //movieMethods.CreateReccsBasedOnMovieName(movieName);
         cout << "Great!, here is your list of reccomendations based on the movie you entered!" << endl;
         // implement functionality to search for and display the movie by name
-    } 
+}
+    
     
     else if (option == 2) {
         // Print all genres
