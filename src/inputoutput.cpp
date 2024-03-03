@@ -7,7 +7,7 @@ int inputOutput::outputWelcomeMessage() {
     cout << "Welcome to Filimify" << endl;
     cout << "We are here to help you find the best movie for you." << endl;
     cout << "Please enter on what attributes you want your recommended movie to be based on:" << endl;
-    cout << "1. Name\n"
+    cout << "1. Name of Movie\n"
          << "2. Genre\n"
          << "3. Starring actor\n"
          << "4. Director" << endl;
@@ -140,7 +140,39 @@ string inputOutput:: manageGenreReccs(MovieMethods& genreMethod)
     return nameOfMovie;
 
  }
-//tring inputOutput:: manageDirectorReccs(MovieMethods& directoMethod);
+string inputOutput:: manageDirectorReccs(MovieMethods& directorMethod)
+{
+    string director = "";
+    cin.ignore(numeric_limits<streamsize>::max(),'\n');
+    getline(cin, director);
+    cout << endl;
+    while(true)
+    {
+        if(cin.fail())
+        {
+            cin.ignore(numeric_limits<streamsize>::max(),'\n');
+            cin.clear();
+            cout << "Actor not found!" << endl;
+            cout << "Enter an actor (full name) to get a recommendation on movies they starred in" << endl;
+            getline(cin, director);
+            cout << endl;
+            
+        }
+        if(!cin.fail())
+        {
+            if (directorMethod.isDirectorReal(director))
+            {
+                break;
+            }
+            cout << "director not found!" << endl;
+            cout << "Enter a director (full name) to get a recommendation on movies they starred in" << endl;
+            getline(cin, director);
+            cout << endl;
+            
+        }
+    }
+    return director;
+}
 
 string inputOutput:: manageActorReccs(MovieMethods& actorMethod)
 {
