@@ -8,8 +8,18 @@
 
 using namespace std;
 
-vector<Movie> MovieDataSet:: generateListOfMovies()
+MovieDataSet::MovieDataSet(const string& filePath) : csvFilePath(filePath) {
+}
+
+vector<Movie> MovieDataSet:: generateListOfMovies() const
 {
+    vector<Movie> movies;
+    ifstream file(csvFilePath); // Use the stored file path to open the file
+
+    if (!file) {
+        cerr << "Unable to open file: " << csvFilePath << endl;
+        return movies; // Return an empty vector or handle the error as you see fit
+    }
     vector<Movie> fillMovies;
     string fileName = "../movieCSV/movies.csv";
 

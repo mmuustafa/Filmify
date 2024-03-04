@@ -18,6 +18,8 @@ int main(int argc, char* argv[]) {
     
     inputOutput io;
     MovieMethods movieMethods;
+    MovieDataSet mds(csvPath); // Assuming you have a constructor that accepts a file path
+    movieMethods.setMovieDataSet(mds);
     int option;
     
     // Display welcome message and get user option

@@ -9,8 +9,9 @@ using namespace std;
 
 class MovieDataSet {
 public:
+    MovieDataSet() = default; // Default constructor
     MovieDataSet(const string& filePath); // Constructor that accepts a file path
-    vector<Movie> generateListOfMovies();
+    vector<Movie> generateListOfMovies() const;
 
 private:
     string csvFilePath; // Member variable to store the file path
