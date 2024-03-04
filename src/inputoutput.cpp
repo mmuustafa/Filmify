@@ -175,3 +175,37 @@ string inputOutput:: manageActorReccs(MovieMethods& actorMethod)
     }
     return actor;
 }
+
+string inputOutput:: manageDirectorReccs(MovieMethods& directorMethod)
+{
+    string director = "";
+    cin.ignore(numeric_limits<streamsize>::max(),'\n');
+    getline(cin, director);
+    cout << endl;
+    while(true)
+    {
+        if(cin.fail())
+        {
+            cin.ignore(numeric_limits<streamsize>::max(),'\n');
+            cin.clear();
+            cout << "Actor not found!" << endl;
+            cout << "Enter an actor (full name) to get a recommendation on movies they starred in" << endl;
+            getline(cin, director);
+            cout << endl;
+            
+        }
+        if(!cin.fail())
+        {
+            if (directorMethod.isDirectorReal(director))
+            {
+                break;
+            }
+            cout << "director not found!" << endl;
+            cout << "Enter a director (full name) to get a recommendation on movies they starred in" << endl;
+            getline(cin, director);
+            cout << endl;
+            
+        }
+    }
+    return director;
+}
