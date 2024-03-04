@@ -70,7 +70,11 @@ Since our program does not use any inheritance as of now, we do not need to be c
  ## Screenshots
  > Screenshots of the input/output after running your application
  ## Installation/Usage
- > Instructions on installing and running your application
+ > Instructions on installing and running Filmify
+to run the program
+run `cmake .`
+then run `make`
+then run `./run movieCSV/movies.csv`
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  
