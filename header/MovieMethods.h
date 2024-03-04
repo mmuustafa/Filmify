@@ -21,6 +21,8 @@ class MovieMethods {
     void SortByYear();
     void PrintAllGenres();
     int PrintFinalListOfReccs(int );
+    bool isDirectorReal(string );
+    bool isActorReal(string );
     //void CreateReccs(int ); //will create reccs based on actor, genre, director. Will call the helper functions based on Int input for
     //1 is movie name, 2 is actor, 3 is genre, 4 is director
 
