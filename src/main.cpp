@@ -7,7 +7,15 @@
 
 using namespace std;
 
-int main() {
+int main(int argc, char* argv[]) {
+    // Check if the path to the movies.csv file has been provided
+    if (argc < 2) {
+        cerr << "Usage: " << argv[0] << " <path_to_movies.csv>" << endl;
+        return 1;
+    }
+
+    string csvPath = argv[1];
+    
     inputOutput io;
     MovieMethods movieMethods;
     int option;

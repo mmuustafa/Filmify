@@ -3,11 +3,17 @@
 
 #include "Movie.h"
 #include <vector>
+#include <string>
 
-class MovieDataSet{
-    public:
-        vector<Movie> generateListOfMovies();
+using namespace std;
 
+class MovieDataSet {
+public:
+    MovieDataSet(const string& filePath); // Constructor that accepts a file path
+    vector<Movie> generateListOfMovies();
+
+private:
+    string csvFilePath; // Member variable to store the file path
 };
 
 #endif
