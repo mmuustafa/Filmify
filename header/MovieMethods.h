@@ -2,6 +2,7 @@
 #define MOVIESMETHODS_H
 
 #include "Movie.h"
+#include "MovieDataSet.h"
 #include <algorithm> // For transform function
 #include <cctype> // For tolower function
 

@@ -10,7 +10,7 @@ using namespace std;
 int main(int argc, char* argv[]) {
     // Check if the path to the movies.csv file has been provided
     if (argc < 2) {
-        cerr << "Usage: " << argv[0] << " <path_to_movies.csv>" << endl;
+        cerr << "Usage: " << argv[0] << "movieCSV/movies.csv" << endl;
         return 1;
     }
 
