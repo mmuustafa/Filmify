@@ -121,6 +121,3 @@ bool MovieMethods:: isDirectorReal(string directorName)
     return false;
 }
 
-void MovieMethods::setMovieDataSet(const MovieDataSet& mds) {
-    everyMovieEver = mds.generateListOfMovies();
-}

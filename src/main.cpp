@@ -7,6 +7,7 @@
 
 using namespace std;
 
+
 int main() {
     inputOutput io;
     MovieMethods movieMethods;
@@ -103,10 +104,8 @@ int main() {
     
     else if (option == 4) {
         string directorName;
-        cout << "Awesome, Please enter the name of the director you're interested in: " << endl;
-        directorName = io.manageDirectorReccs(movieMethods);
-        movieMethods.CreateReccsBasedOnDirector(directorName);
-        cout << "What a choice! " << directorName << " has directed many great movies, here are their movies!" << endl;
+        cout << "Please enter the name of the director you're interested in: " << endl;
+        cin >> directorName;
         // implement functionality to search for and display movies by director
     }
 
