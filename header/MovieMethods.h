@@ -2,6 +2,7 @@
 #define MOVIESMETHODS_H
 
 #include "Movie.h"
+#include "MovieDataSet.h"
 #include <algorithm> // For transform function
 #include <cctype> // For tolower function
 
@@ -23,6 +24,7 @@ class MovieMethods {
     int PrintFinalListOfReccs(int );
     bool isDirectorReal(string );
     bool isActorReal(string );
+    void setMovieDataSet(const MovieDataSet& mds);
     //void CreateReccs(int ); //will create reccs based on actor, genre, director. Will call the helper functions based on Int input for
     //1 is movie name, 2 is actor, 3 is genre, 4 is director
 

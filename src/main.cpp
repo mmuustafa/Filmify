@@ -7,9 +7,19 @@
 
 using namespace std;
 
-int main() {
+int main(int argc, char* argv[]) {
+    // Check if the path to the movies.csv file has been provided
+    if (argc < 2) {
+        cerr << "Usage: " << argv[0] << "movieCSV/movies.csv" << endl;
+        return 1;
+    }
+
+    string csvPath = argv[1];
+    
     inputOutput io;
     MovieMethods movieMethods;
+    MovieDataSet mds(csvPath); // Assuming you have a constructor that accepts a file path
+    movieMethods.setMovieDataSet(mds);
     int option;
     
     // Display welcome message and get user option
