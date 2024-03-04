@@ -8,8 +8,10 @@
 
 using namespace std;
 
-MovieDataSet::MovieDataSet(const string& filePath) : csvFilePath(filePath) {
-}
+vector<Movie> MovieDataSet:: generateListOfMovies()
+{
+    vector<Movie> fillMovies;
+    string fileName = "../movieCSV/movies.csv";
 
 vector<Movie> MovieDataSet::generateListOfMovies() const {
     vector<Movie> movies;
