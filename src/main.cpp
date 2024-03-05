@@ -4,6 +4,7 @@
 #include "../header/MovieMethods.h"
 #include "../header/Movie.h"
 #include "../header/MovieDataSet.h"
+#include <cassert>
 
 using namespace std;
 
@@ -135,17 +136,19 @@ int main() {
                 cout << "Here is your newly sorted list based on alphabetical order!" << endl;
                 movieMethods.SortByAlphabetical();
 
-                movieMethods.PrintFinalListOfReccs(0);
+                movieMethods.PrintFinalListOfReccsForSorts(0);
+
             }
 
         }
 
-        if (option2 ==3 )
+        if (option2 == 3 )
         {
             return 0;
         }
 
     option2 = io.InputUserChoiceAfterReccs();
+
     }
     return 0;
 }
