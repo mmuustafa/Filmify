@@ -82,6 +82,8 @@ int MovieMethods:: PrintFinalListOfReccs(int num)
     int movieCounter = 0;
     bool atLeastOneMovie = false;
     cout << endl;
+
+    
     int i = num*10;
     int endi = i+10;
     for(int i = num*10;i<endi&&i<reccomendedMovies.size();i++) {
@@ -119,5 +121,10 @@ bool MovieMethods:: isDirectorReal(string directorName)
         }
     }
     return false;
+}
+
+void MovieMethods:: SortByAlphabetical()
+{
+    
 }
 
