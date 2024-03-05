@@ -24,7 +24,7 @@ int main() {
 
         movieName = io.manageMovieNameReccs(movieMethods);
 
-        cout << "Awesome, " << movieName << " is a great movie!" << endl;
+        cout << "Nice, " << movieName << " is a great movie!" << endl;
         cout << endl;
         cout << "Now that we have the name of your movie, on what attributes would you like your reccomendation based on?" << endl;
         cout << "1. Genre of that movie" << endl;
@@ -37,7 +37,7 @@ int main() {
 
         if(userOption == 1)
         {
-            cout << "searching for movies!" << endl;
+            cout << "Searching for movies!" << endl;
             movieMethods.CreateReccsBasedOnGenre(userMovie.getGenre());
             //WANT TO OUTPUT THE LIST OF MOVIES THAT ARE BASED ON SAME GENRE AS THAT MOVIE
             cout << endl;
@@ -45,7 +45,7 @@ int main() {
         
         else if (userOption == 2)
         {
-            cout << "searching for movies!" << endl;
+            cout << "Searching for movies!" << endl;
             movieMethods.CreateReccsBasedOnActor(userMovie.getActor());
             //WANT TO OUTPUT THE LIST OF MOVIES THAT ARE BASED ON SAME ACTOR
             cout << endl;
@@ -53,13 +53,13 @@ int main() {
 
         else if (userOption == 3)
         {
-            cout << "searching for movies!" << endl;
+            cout << "Searching for movies!" << endl;
             movieMethods.CreateReccsBasedOnDirector(userMovie.getDirector());
             //WANT TO OUTPUT THE LIST OF MOVIES THAT ARE BASED ON SAME DIRECTOR
             cout << endl;
         }
         //movieMethods.CreateReccsBasedOnMovieName(movieName);
-        cout << "Great!, here is your list of reccomendations based on the movie you entered!" << endl;
+        cout << "Great! Here is your list of reccomendations based on the movie you entered!" << endl;
         // implement functionality to search for and display the movie by name
     }
     
@@ -67,8 +67,10 @@ int main() {
     else if (option == 2) {
         // Print all genres
         int option1 = 0;
-        cout << "Do you have a certain genre on mind that you like reccomendations based on? If so type 1 to type it in." << endl;
-        cout << "If not, Would you like to see a list? type 2 to see a list." << endl;
+        cout << "Do you have a certain genre in mind that you would like your reccomendations to be based on?" << endl 
+             << "If so type 1 to type it in." << endl;
+        cout << "If not, Would you like to see a list?" << endl
+             << "Type 2 to see a list." << endl;
         string userGenre;
         cin >> option1;
             if (option1 == 1)
@@ -78,7 +80,7 @@ int main() {
                 movieMethods.CreateReccsBasedOnGenre(userGenre);
                 //INSERT FUNCTION TO OUTPUT THE MOVIES HERE
                 cout << "Good choice! you can never go wrong with a " << userGenre << " movie." << endl;
-                cout << "Great!, here is your list of reccomendations based on your choice of " << userGenre << endl;
+                cout << "Great! Here is your list of reccomendations based on your choice of " << userGenre << endl;
             }
             else if ( option1 == 2)
             {
@@ -88,8 +90,8 @@ int main() {
             cout << "Choose a genre and we'll develop a list of movies for your choosing based on your desired genre." << endl;
             userGenre = io.manageGenreReccs(movieMethods);
             movieMethods.CreateReccsBasedOnGenre(userGenre);
-            cout << "Good choice! glad we can help you in your process of choosing " << userGenre << " as your genre." << endl;
-            cout << "Great!, here is your list of reccomendations based on your choice of " << userGenre << endl;
+            cout << "Good choice! Glad we can help you in your process of choosing " << userGenre << " as your genre." << endl;
+            cout << "Great! Here is your list of reccomendations based on your choice of " << userGenre << endl;
             }
     } 
     
