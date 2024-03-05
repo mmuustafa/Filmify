@@ -53,9 +53,6 @@ int inputOutput::outputClosingMessage() {
 }
 
 
-void inputOutput::printMenu() {
-}
-
 string inputOutput:: manageGenreReccs(MovieMethods& genreMethod)
 {
     vector<string> genres;
@@ -209,3 +206,42 @@ string inputOutput:: manageDirectorReccs(MovieMethods& directorMethod)
     }
     return director;
 }
+
+int inputOutput:: InputUserChoiceAfterReccs()
+{
+    int option = 3;
+
+    cout << "Now that you have your options, would you like to see more reccomendations, sort your list, or use the current reccomendations provided" << endl;
+    cout << "type 1 to see more reccomendations" << endl;
+    cout << "type 2 for sort" << endl;
+    cout << "type 3 to quit " << endl;
+
+    cin >>option;
+
+    while (true)
+    {
+        if(cin.fail())
+        {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(),'\n');
+            cout << "Please enter a valid option" << endl;
+            cin >> option;
+        }
+        else if (!cin.fail())
+        {
+            if (option > 0 && option < 4)
+            {
+                break;
+            }
+            else
+            {
+                cout << "Please enter a valid option" << endl;
+                cin >> option;
+            }
+        }
+    }
+    cout << endl;
+    return option;
+}
+    
+

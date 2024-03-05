@@ -7,7 +7,6 @@
 
 using namespace std;
 
-
 int main() {
     inputOutput io;
     MovieMethods movieMethods;
@@ -112,6 +111,32 @@ int main() {
     }
 
     movieMethods.PrintFinalListOfReccs(0);
+
+    cout << endl;
     
+    int option2 = io.InputUserChoiceAfterReccs();
+    int loadMoreReccsNum = 1;
+
+    while(option2 <= 3)
+    {
+
+        if (option2 == 1)
+        {
+            movieMethods.PrintFinalListOfReccs(loadMoreReccsNum);
+            loadMoreReccsNum += 1;
+        }
+        
+        // if(option2 == 2)
+        // {
+
+        // }
+
+        if (option2 ==3 )
+        {
+            return 0;
+        }
+
+    option2 = io.InputUserChoiceAfterReccs();
+    }
     return 0;
 }
