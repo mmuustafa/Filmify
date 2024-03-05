@@ -24,11 +24,12 @@ public:
     std::string InputUserGenreRec(Movie& movie);
     std::string InputUserDirectorRec(Movie& movie);
     std::string InputUserNameDirectorRec(Movie& movie);
-    int InputUserChoiceAgain();
     int InputUserSortingDecision();
     void PrintSortedOptions(int option);
     void printMenu();
 
+    int InputUserChoiceAfterReccs();
+    int InputUserChoiceSorts();
     string manageGenreReccs(MovieMethods& );
     string manageMovieNameReccs(MovieMethods& );
     string manageDirectorReccs(MovieMethods& );
