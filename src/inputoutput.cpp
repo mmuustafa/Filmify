@@ -243,5 +243,42 @@ int inputOutput:: InputUserChoiceAfterReccs()
     cout << endl;
     return option;
 }
+
+int inputOutput:: InputUserChoiceSorts()
+{
+    int option = 1;
+
+    cout << "Awesome!, Let's get started with how you would like to sort your list." << endl;
+    cout << "1. Alphabetical order" << endl;
+    cout << "2. Recent to oldest" << endl;
+    cout << "3. Rating" << endl;
+
+    cin >> option;
+
+    while(true)
+    {
+         if(cin.fail())
+        {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(),'\n');
+            cout << "Please enter a valid option" << endl;
+            cin >> option;
+        }
+        else if (!cin.fail())
+        {
+            if (option > 0 && option < 4)
+            {
+                break;
+            }
+            else
+            {
+                cout << "Please enter a valid option" << endl;
+                cin >> option;
+            }
+        }
+    }
+    cout << endl;
+    return option;
+}
     
 

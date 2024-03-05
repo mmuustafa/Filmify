@@ -125,6 +125,34 @@ bool MovieMethods:: isDirectorReal(string directorName)
 
 void MovieMethods:: SortByAlphabetical()
 {
+    vector<string> movieName;
+    vector<int> charIndex;
+    for (int i = 0; i < reccomendedMovies.size(); i++)
+    {
+        movieName.push_back(reccomendedMovies[i].getMovieName());
+    }
+
+    vector<string> testName = movieName;
+    sort(movieName.begin(), movieName.end());
     
+
+    for (int i=0; i<movieName.size();i++)
+    {
+        for (int j = 0; j < reccomendedMovies.size(); j++)
+        {
+            if(movieName[i] == reccomendedMovies[j].getMovieName())
+            {
+                charIndex.push_back(j);
+                break;
+            }
+        }
+
+    }
+    vector<Movie> newRecommendedList = reccomendedMovies;
+    
+    for (int i = 0; i < reccomendedMovies.size(); i++)
+    {
+        reccomendedMovies[i]=newRecommendedList[charIndex[i]]; 
+    }
 }
 

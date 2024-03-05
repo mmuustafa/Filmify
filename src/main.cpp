@@ -126,10 +126,19 @@ int main() {
             loadMoreReccsNum += 1;
         }
         
-        // if(option2 == 2)
-        // {
+        if(option2 == 2)
+        {
+            int sortNum = io.InputUserChoiceSorts();
+            
+            if(sortNum == 1)
+            {
+                cout << "Here is your newly sorted list based on alphabetical order!" << endl;
+                movieMethods.SortByAlphabetical();
 
-        // }
+                movieMethods.PrintFinalListOfReccs(0);
+            }
+
+        }
 
         if (option2 ==3 )
         {
