@@ -21,7 +21,10 @@ class MovieMethods {
     void SortByRating();
     void SortByYear();
     void PrintAllGenres();
+
     int PrintFinalListOfReccs(int );
+    int PrintFinalListOfReccsForSorts(int );
+
     bool isDirectorReal(string );
     bool isActorReal(string );
     void setMovieDataSet(const MovieDataSet& mds);
