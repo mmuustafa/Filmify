@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int inputOutput::outputWelcomeMessage() {
+int output::outputWelcomeMessage() {
     cout << "Welcome to Filimify" << endl;
     cout << "We are here to help you find the best movie for you." << endl;
     cout << "Please enter on what attributes you want your recommended movie to be based on:" << endl;
@@ -24,7 +24,7 @@ int inputOutput::outputWelcomeMessage() {
     return option;
 }
 
-int inputOutput::outputClosingMessage() {
+int output::outputClosingMessage() {
     int decision = 0;
     int runAgain = 0;
     cout << "Thank you for using Filmify!" << endl;
@@ -53,7 +53,7 @@ int inputOutput::outputClosingMessage() {
 }
 
 
-void inputOutput::printMenu() {
+void output::printMenu() {
 }
 
 string inputOutput:: manageGenreReccs(MovieMethods& genreMethod)

@@ -8,7 +8,7 @@
 
 using namespace std;
 
-vector<Movie> MovieDataSet:: generateListOfMovies()
+vector<Movie> MovieDataSet::generateListOfMovies()
 {
     vector<Movie> fillMovies;
     string fileName = "../movieCSV/movies.csv";

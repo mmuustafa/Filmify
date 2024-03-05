@@ -9,8 +9,16 @@
 
 using namespace std;
 
-class inputOutput {
+class inputOutput : public output , public input {
 public:
+    string manageGenreReccs(MovieMethods& );
+    string manageMovieNameReccs(MovieMethods& );
+    string manageDirectorReccs(MovieMethods& );
+    string manageActorReccs(MovieMethods& );  
+};
+
+class output {
+    public: 
     int outputWelcomeMessage();
     int outputClosingMessage();
     std::vector<std::string> outputListOfActors();
@@ -19,26 +27,20 @@ public:
     std::string outputBasedOnGenre(Movie& movie);
     std::string outputBasedOnActor(Movie& movie);
     std::string outputBasedOnDirector(Movie& movie);
-    int InputUserMenuOptions();
+     void PrintSortedOptions(int option);
+    void printMenu();
+};
+
+class input {
+public: 
+int InputUserMenuOptions();
     std::string InputUserActorRec(Movie& movie);
     std::string InputUserGenreRec(Movie& movie);
     std::string InputUserDirectorRec(Movie& movie);
     std::string InputUserNameDirectorRec(Movie& movie);
     int InputUserChoiceAgain();
     int InputUserSortingDecision();
-    void PrintSortedOptions(int option);
-    void printMenu();
-
-    string manageGenreReccs(MovieMethods& );
-    string manageMovieNameReccs(MovieMethods& );
-    string manageDirectorReccs(MovieMethods& );
-    string manageActorReccs(MovieMethods& );
-    
-    
-    
-    
 };
-
 
 
 
