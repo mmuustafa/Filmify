@@ -3,6 +3,7 @@
  
  > Authors: \<[Mustafa Hassan](https://github.com/mhass027)\
 \<[Jahanbir Mann](https://github.com/jmann028)\
+> \<[Adharsh Prathap](https://github.com/adrsh-prthpp)\
 \<[Iliyan Alibhai](https://github.com/ialib001)\>
 >
 
