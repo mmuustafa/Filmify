@@ -86,10 +86,32 @@ int MovieMethods:: PrintFinalListOfReccs(int num)
     
     int i = num*10;
     int endi = i+10;
-    for(int i = num*10;i<endi&&i<reccomendedMovies.size();i++) {
+    for(int i = num*10;i<endi&&i<this->reccomendedMovies.size();i++) {
         ++movieCounter;
         atLeastOneMovie = true;
-        cout<<reccomendedMovies.at(i).getMovieName()<<'\n';
+        cout<<this->reccomendedMovies.at(i).getMovieName()<<'\n';
+    }
+    if (!atLeastOneMovie)
+    {
+        cout << "No movies found!" << endl;
+    }
+    cout << endl;
+    return movieCounter;
+}
+
+int MovieMethods::  PrintFinalListOfReccsForSorts(int num )
+{
+    int movieCounter = 0;
+    bool atLeastOneMovie = false;
+    cout << endl;
+
+    
+    int i = num*10;
+    int endi = i+100;
+    for(int i = num*10;i<endi&&i<this->reccomendedMovies.size();i++) {
+        ++movieCounter;
+        atLeastOneMovie = true;
+        cout<<this->reccomendedMovies.at(i).getMovieName()<<'\n';
     }
     if (!atLeastOneMovie)
     {
@@ -127,9 +149,9 @@ void MovieMethods:: SortByAlphabetical()
 {
     vector<string> movieName;
     vector<int> charIndex;
-    for (int i = 0; i < reccomendedMovies.size(); i++)
+    for (int i = 0; i < this->reccomendedMovies.size(); i++)
     {
-        movieName.push_back(reccomendedMovies[i].getMovieName());
+        movieName.push_back(this->reccomendedMovies[i].getMovieName());
     }
 
     vector<string> testName = movieName;
@@ -138,9 +160,9 @@ void MovieMethods:: SortByAlphabetical()
 
     for (int i=0; i<movieName.size();i++)
     {
-        for (int j = 0; j < reccomendedMovies.size(); j++)
+        for (int j = 0; j < this->reccomendedMovies.size(); j++)
         {
-            if(movieName[i] == reccomendedMovies[j].getMovieName())
+            if(movieName[i] == this->reccomendedMovies[j].getMovieName())
             {
                 charIndex.push_back(j);
                 break;
@@ -152,7 +174,7 @@ void MovieMethods:: SortByAlphabetical()
     
     for (int i = 0; i < reccomendedMovies.size(); i++)
     {
-        reccomendedMovies[i]=newRecommendedList[charIndex[i]]; 
+        this->reccomendedMovies[i]=newRecommendedList[charIndex[i]]; 
     }
 }
 

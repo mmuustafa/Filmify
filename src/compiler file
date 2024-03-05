@@ -1,5 +1,9 @@
 g++ inputoutput.cpp main.cpp Movie.cpp MovieDataSet.cpp MovieMethods.cpp
 
+g++ main.cpp DatasetAccessor.cpp InputOutputHandler.cpp Movie.cpp Movies.cpp
+
+
+
 NOTE: IN VS CODE, GENRE IMPLEMENTATION IS print_director_function, BUT IN GITHUB IT IS genre_implementation.
 
 NOTE: IN VS CODE, WORKING_ON_SORT_BY_ALPHABETICALLY IS same as main_logic_and_InputUserChoiceAfterReccs 
