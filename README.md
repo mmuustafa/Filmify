@@ -71,10 +71,13 @@ Since our program does not use any inheritance as of now, we do not need to be c
  
  ## Screenshots
  > Screenshots of the input/output after running your application
-> <img width="120" alt="Screenshot 2024-03-12 at 2 52 10 PM" src="https://github.com/cs100/final-project-mhass027-jmann028-ialib001-aprat023/assets/143841150/fc58d459-dcb5-4fbf-ae2f-c3b6fded3d3e">
-<img width="120" alt="Screenshot 2024-03-12 at 2 52 40 PM" src="https://github.com/cs100/final-project-mhass027-jmann028-ialib001-aprat023/assets/143841150/a9f7dd12-44b9-4dbc-884a-940f7c6a28e0">
-<img width="1204" alt="Screenshot 2024-03-12 at 2 53 06 PM" src="https://github.com/cs100/final-project-mhass027-jmann028-ialib001-aprat023/assets/143841150/ccde4453-8876-4a14-be3e-ad4e9c8d776a">
-> 
+> <img width="300" alt="Screenshot 2024-03-12 at 2 53 06 PM" src="https://github.com/cs100/final-project-mhass027-jmann028-ialib001-aprat023/assets/143841150/fc6ce4d0-514d-4b0c-9f16-2e316acbbff1">
+
+<img width="300" alt="Screenshot 2024-03-12 at 2 52 40 PM" src="https://github.com/cs100/final-project-mhass027-jmann028-ialib001-aprat023/assets/143841150/64f7d715-c07b-4c5e-8437-fd713e41abaf">
+
+<img width="300" alt="Screenshot 2024-03-12 at 2 52 10 PM" src="https://github.com/cs100/final-project-mhass027-jmann028-ialib001-aprat023/assets/143841150/e20636df-149f-46ea-a9ac-0810cd136939">
+
+
  ## Installation/Usage
  > Instructions on installing and running Filmify
 1. First clone the git repo onto your local machine.
