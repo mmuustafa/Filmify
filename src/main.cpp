@@ -139,13 +139,14 @@ int main() {
                 movieMethods.PrintFinalListOfReccsForSorts(0);
 
             }
+            else if (sortNum == 3) {
+                cout << "Here is your newly sorted list based on Rating order!" << endl;
+                movieMethods.SortByRating();
 
+                movieMethods.PrintFinalListOfReccsForSorts(0);
+            }
         }
-
-        if (option2 == 3 )
-        {
-            return 0;
-        }
+        
 
     option2 = io.InputUserChoiceAfterReccs();
 
