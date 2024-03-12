@@ -73,10 +73,11 @@ Since our program does not use any inheritance as of now, we do not need to be c
  > Screenshots of the input/output after running your application
  ## Installation/Usage
  > Instructions on installing and running Filmify
-to run the program
-run `cmake .`
-then run `make`
-then run `./run movieCSV/movies.csv`
+1. First clone the git repo onto your local machine.
+2. Next, navigte to the `src` folder and right click on it and then click `Open in Integrated terminal`
+3. Now, in the terminal run the following command `g++ inputoutput.cpp main.cpp Movie.cpp MovieDataSet.cpp MovieMethods.cpp -o Filmify`
+4. Lastly, run `./Filimify`
+5. Enjoy!
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  
