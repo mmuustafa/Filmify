@@ -146,6 +146,10 @@ int main() {
                 movieMethods.PrintFinalListOfReccsForSorts(0);
             }
         }
+        else
+        {
+            return 0;
+        }
         
 
     option2 = io.InputUserChoiceAfterReccs();
