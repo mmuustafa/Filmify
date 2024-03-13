@@ -99,7 +99,7 @@ int MovieMethods:: PrintFinalListOfReccs(int num)
     return movieCounter;
 }
 
-int MovieMethods::  PrintFinalListOfReccsForSorts(int num )
+int MovieMethods::PrintFinalListOfReccsForSorts(int num )
 {
     int movieCounter = 0;
     bool atLeastOneMovie = false;
@@ -178,3 +178,18 @@ void MovieMethods:: SortByAlphabetical()
     }
 }
 
+void MovieMethods::PushBackforTesting(Movie reccMovie) {
+    reccomendedMovies.push_back(reccMovie);
+}
+
+Movie MovieMethods::getallMoviesmovieForTesting(int i) {
+    return everyMovieEver.at(i);
+}
+
+Movie MovieMethods::getMovieTesting(int i) {
+    return reccomendedMovies.at(i);
+}
+
+int MovieMethods::sizeofRecommendedForTesting() {
+    return reccomendedMovies.size();
+}
