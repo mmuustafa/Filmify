@@ -36,6 +36,12 @@ class MovieMethods {
     void CreateReccsBasedOnActor(string );
     void CreateReccsBasedOnGenre(string );
     void CreateReccsBasedOnDirector(string );
+
+    public:
+        Movie getMovieTesting(int );
+        void testPushBackforTesting(Movie );
+        Movie getallMoviesmovieForTesting(int i);
+        int sizeofRecommendedForTesting();
 };
 
 

@@ -11,7 +11,7 @@ using namespace std;
 vector<Movie> MovieDataSet:: generateListOfMovies()
 {
     vector<Movie> fillMovies;
-    string fileName = "../movieCSV/movies.csv";
+    string fileName = "./movieCSV/movies.csv";   // ./ passes unit testing commands and ../ passes a.out in the src
 
     ifstream infs(fileName);
     assert(infs);
@@ -78,6 +78,7 @@ vector<Movie> MovieDataSet:: generateListOfMovies()
         line = "";
 
     }
+
     return fillMovies;
 
 }

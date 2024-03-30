@@ -207,3 +207,20 @@ void MovieMethods::SortByYear(){
         swap(this->reccomendedMovies[min_idx], this->reccomendedMovies[i]);
     }
 }
+
+Movie MovieMethods::getMovieTesting(int i) {
+    return reccomendedMovies.at(i);
+}
+
+int MovieMethods::sizeofRecommendedForTesting() {
+    return reccomendedMovies.size();
+}
+
+void MovieMethods::testPushBackforTesting(Movie reccMovie) {
+    reccomendedMovies.push_back(reccMovie);
+}
+
+Movie MovieMethods::getallMoviesmovieForTesting(int i) {
+    return everyMovieEver.at(i);
+}
+

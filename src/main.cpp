@@ -127,7 +127,7 @@ int main() {
             loadMoreReccsNum += 1;
         }
         
-        if(option2 == 2)
+        else if(option2 == 2)
         {
             int sortNum = io.InputUserChoiceSorts();
             
@@ -155,6 +155,9 @@ int main() {
                 movieMethods.PrintFinalListOfReccsForSorts(0);
             }
         
+        }
+        else{
+            return 0;
         }
     
     option2 = io.InputUserChoiceAfterReccs();
