@@ -89,5 +89,11 @@ Since our program does not use any inheritance as of now, we do not need to be c
 4. Lastly, run `./Filimify`
 5. Enjoy!
  ## Testing
- > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
+Our project was tested using unit testing. We ran cmake . and make on the project. In addition, we also ran Valgrind
+> Attatched below are screenshot of our unit tests and our build target:
+> 
+ ![1E0E080F-8A05-4807-8E9C-1B450E01CD57](https://github.com/cs100/final-project-mhass027-jmann028-ialib001-aprat023/assets/147021240/ea820584-92a7-4f1e-af54-1145b57690f3)
+
+![E53C40CC-B320-44BB-BCEF-0CAEB04FBD8B_4_5005_c](https://github.com/cs100/final-project-mhass027-jmann028-ialib001-aprat023/assets/147021240/fb5c8fb2-686c-4b46-b8dd-6ed1abbf9e5f)
+
  
